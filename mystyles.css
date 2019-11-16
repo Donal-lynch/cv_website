@@ -1,17 +1,23 @@
 
 html body {width: 100%}
 
-.wrapper{
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrapper{
   width:90%;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5rem; /*footer height*/
 }
 
 
 .test-block {border: 2px solid red;
   border-radius: 20px;
 }
-
-
 
 
 /* Flex styling ------------------------------------------------------- */
@@ -43,7 +49,7 @@ html body {width: 100%}
 
 
 @media (min-width: 550px) {
-  .wrapper{
+  .{
     width:85%;
   }
 
@@ -86,9 +92,31 @@ html body {width: 100%}
 }
 
 
+/* footer
+  -------------------------------------------------------------------------- */
+
+footer{
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  overflow: hidden;
+    /*right: 0;
+    width: 200px;
+    height: 100px;*/
 
 
+/*
+    position: absolute;
+bottom: 0;
+width: 100%;
+height: 2.5rem;
 
+*/
+
+  background-color: slategrey;
+}
 
 
   /* top nav
@@ -98,8 +126,8 @@ html body {width: 100%}
 
   /* Add a black background color to the top navigation */
  .topnav {
-   background-color: darkblue;                                     /*CHANGED*/
-      overflow: hidden;
+  background-color: steelblue;                                     /*CHANGED*/
+  overflow: hidden;
  }
 
  /* Style the links inside the navigation bar */
@@ -121,7 +149,7 @@ html body {width: 100%}
 
  /* Add an active class to highlight the current page */
  .topnav a.active {
-   background-color: orange;                                         /*CHANGED*/
+   background-color: mediumblue;                                         /*CHANGED*/
    color: white;
  }
 
