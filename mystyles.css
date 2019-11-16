@@ -1,7 +1,6 @@
 
 html body {width: 100%}
 
-
 #page-container {
   position: relative;
   min-height: 100vh;
@@ -15,7 +14,8 @@ html body {width: 100%}
 }
 
 
-.test-block {border: 2px solid red;
+.test-block {
+  border: 2px solid red;
   border-radius: 20px;
 }
 
@@ -31,8 +31,6 @@ html body {width: 100%}
   margin-right: auto;
 }
 
-
-/*golden ratio: 62 38*/
 .flex_gr_bg{
   margin: .25%
 }
@@ -41,26 +39,31 @@ html body {width: 100%}
   margin: .25%;
   padding-top: 1%;
   padding-bottom: 1%;
-
   display: flex;
   flex-direction: column;
 }
 
+.about_me{
+  padding-top: 5px;
+  padding-bottom: 40px
+}
+
+.index_link{
+  border: 2px solid blue;
+  border-radius: 10px;
+  margin: .5%;
+  padding: 20px
+}
 
 
 @media (min-width: 550px) {
-  .{
-    width:85%;
-  }
-
   .flex-container {
     flex-direction: row;
   }
 
-
+/*golden ratio: 62 38*/
   .flex_gr_bg{
     flex-basis: 60%;
-
     margin-top: 0.5%;
     margin-bottom: 0.5%;
     margin-left: 0.5%;
@@ -75,25 +78,38 @@ html body {width: 100%}
     margin-left: 0.25%;
     margin-right: 0.5%;
   }
+} /*end of flex media query*/
+
+
+/* statistics.html
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––  */
+
+.stats-section{
+  border: 2px solid green;
+  border-radius: 20px;
 }
 
 
-.about_me{
-  padding-top: 5px;
-  padding-bottom: 40px
-}
 
 
-.index_link{
-  border: 2px solid blue;
-  border-radius: 10px;
-  margin: .5%;
-  padding: 20px
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* footer
-  -------------------------------------------------------------------------- */
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––  */
 
 footer{
 
@@ -102,26 +118,13 @@ footer{
   width: 100%;
   height: 5rem;
   overflow: hidden;
-    /*right: 0;
-    width: 200px;
-    height: 100px;*/
-
-
-/*
-    position: absolute;
-bottom: 0;
-width: 100%;
-height: 2.5rem;
-
-*/
-
   background-color: slategrey;
 }
 
 
   /* top nav
   css coppied from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 
   /* Add a black background color to the top navigation */
@@ -149,7 +152,7 @@ height: 2.5rem;
 
  /* Add an active class to highlight the current page */
  .topnav a.active {
-   background-color: mediumblue;                                         /*CHANGED*/
+   background-color: mediumblue;                                    /*CHANGED*/
    color: white;
  }
 
