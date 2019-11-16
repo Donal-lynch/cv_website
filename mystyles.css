@@ -1,30 +1,110 @@
-.container{
-  position: relative;
-  top: 30px;
 
+html body {width: 100%}
+
+.wrapper{
+  width:90%;
+  margin: auto;
 }
-
 
 
 .test-block {border: 2px solid red;
   border-radius: 20px;
-  padding: 150px 20px}
+}
 
 
 
-  /* top nav css coppied from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+
+/* Flex styling ------------------------------------------------------- */
+.flex-container {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*golden ratio: 62 38*/
+.flex_gr_bg{
+  margin: .25%
+}
+
+.flex_gr_sm{
+  margin: .25%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+@media (min-width: 550px) {
+  .wrapper{
+    width:85%;
+  }
+
+  .flex-container {
+    flex-direction: row;
+  }
+
+
+  .flex_gr_bg{
+    flex-basis: 60%;
+
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    margin-left: 0.5%;
+    margin-right: 0.25%;
+  }
+
+  .flex_gr_sm{
+    flex-basis: 36%;
+
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    margin-left: 0.25%;
+    margin-right: 0.5%;
+  }
+}
+
+
+.about_me{
+  padding-top: 5px;
+  padding-bottom: 40px
+}
+
+
+.index_link{
+  border: 2px solid blue;
+  border-radius: 10px;
+  margin: .5%;
+  padding: 20px
+}
+
+
+
+
+
+
+
+  /* top nav
+  css coppied from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 
   /* Add a black background color to the top navigation */
  .topnav {
-   background-color: #333;
-   overflow: hidden;
+   background-color: darkblue;                                     /*CHANGED*/
+      overflow: hidden;
  }
 
  /* Style the links inside the navigation bar */
  .topnav a {
-   float: left;
+   float: right;                                                    /*CHANGED*/
    display: block;
    color: #f2f2f2;
    text-align: center;
@@ -41,7 +121,7 @@
 
  /* Add an active class to highlight the current page */
  .topnav a.active {
-   background-color: #4CAF50;
+   background-color: orange;                                         /*CHANGED*/
    color: white;
  }
 
@@ -53,8 +133,10 @@
  /* When the screen is less than 600 pixels wide, hide all links, except for the
  first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 549px) {                              /*CHANGED*/
- .topnav a:not(:first-child) {display: none;}
- .topnav a.icon {
+
+  .topnav a {display: none;}                                        /*CHANGED*/
+
+  .topnav a.icon {
    float: right;
    display: block;
  }
