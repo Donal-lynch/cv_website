@@ -84,26 +84,56 @@ html body {width: 100%}
 /* statistics.html
     –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––  */
 
-.stats-section{
+.grid-container > div {
   border: 2px solid green;
   border-radius: 20px;
+  margin: 0.5rem;
+  padding-left:10px;
+  padding-top: 10px;
 }
 
 
 
+.grid-container{
+  display: grid;
+
+  grid-template:
+    'stats-section1'
+    'stats-section2'
+    'stats-section3'
+    'stats-section4'
+    'stats-section5'
+    'stats-section6';
+}
+
+
+
+.stats-section1 { grid-area: stats-section1; }
+.stats-section2 { grid-area: stats-section2; }
+.stats-section3 { grid-area: stats-section3; }
+.stats-section4 { grid-area: stats-section4; }
+.stats-section5 { grid-area: stats-section5; }
+.stats-section6 { grid-area: stats-section6; }
 
 
 
 
+@media (min-width: 550px) {
+  .grid-container{
+    grid-template:
+      'stats-section1 stats-section2'
+      'stats-section3 stats-section4'
+      'stats-section5 stats-section6';
+  }
+}
 
-
-
-
-
-
-
-
-
+@media (min-width: 750px) {
+  .grid-container{
+    grid-template:
+      'stats-section1 stats-section2 stats-section3'
+      'stats-section4 stats-section5 stats-section6';
+  }
+}
 
 
 
