@@ -175,8 +175,9 @@ footer a{
 
 
   /* top nav
-  css coppied from https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
+  css coppied from https://www.w3schools.com/howto/howto_js_nav-list_responsive.asp
   ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 
 
   /* Add a black background color to the top navigation */
@@ -185,10 +186,16 @@ footer a{
   overflow: hidden;
  }
 
+h1{
+
+    color: pink;
+
+ }
+
  /* Style the links inside the navigation bar */
- .topnav a {
+ .nav-list a {
    float: right;                                                    /*CHANGED*/
-   display: block;
+   display: inline;
    color: #f2f2f2;
    text-align: center;
    padding: 14px 16px;
@@ -197,47 +204,55 @@ footer a{
  }
 
  /* Change the color of links on hover */
- .topnav a:hover {
+ .nav-list a:hover {
    background-color: #ddd;
    color: black;
  }
 
  /* Add an active class to highlight the current page */
- .topnav a.active {
+ .nav-list a.active {
    background-color: mediumblue;                                    /*CHANGED*/
    color: white;
  }
 
- /* Hide the link that should open and close the topnav on small screens */
- .topnav .icon {
+ /* Hide the link that should open and close the nav-list on small screens */
+ .nav-list .icon {
    display: none;
  }
 
  /* When the screen is less than 600 pixels wide, hide all links, except for the
- first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+ first one ("Home"). Show the link that contains should open and close the nav-list (.icon) */
 @media screen and (max-width: 549px) {                              /*CHANGED*/
+  /*Only float left when the navbar goes to hamburger
+  The H1 is inline otherwise, and takes up a whole row. Tis is beacuse there
+  canb be a screen size where both the h1 and the links go past half way*/
+  h1{float:left;}                                          /*ADDED*/
 
-  .topnav a {display: none;}                                        /*CHANGED*/
+  .nav-list a {display: none;}                                        /*CHANGED*/
 
-  .topnav a.icon {
+  .nav-list a.icon {
    float: right;
    display: block;
  }
 }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user
-clicks on the icon. This class makes the topnav look good on small screens
+/* The "responsive" class is added to the nav-list with JavaScript when the user
+clicks on the icon. This class makes the nav-list look good on small screens
 (display the links vertically instead of horizontally) */
 @media screen and (max-width: 549px) {                             /*CHANGED*/
- .topnav.responsive {position: relative;}
- .topnav.responsive a.icon {
+ .nav-list.responsive {position: relative;}
+ .nav-list.responsive a.icon {
    position: absolute;
    right: 0;
    top: 0;
  }
- .topnav.responsive a {
+ .nav-list.responsive a {
    float: none;
    display: block;
    text-align: left;
  }
+
+h1{float:left;}
+
+
 }
