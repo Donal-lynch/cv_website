@@ -155,16 +155,23 @@ html body {width: 100%}
 
 }
 
-div img{
-  width: 100%
-  height:80%;
-}
 
-iframe{
+
+.map {
   width: 100%;
   height: 100%;
 }
 
+
+.video-wrapper{
+  text-align: center;
+  height: 80%;
+}
+
+.video{
+  display: inline-block;
+  width:90%
+}
 
 
 
@@ -201,19 +208,12 @@ footer a{
   css coppied from https://www.w3schools.com/howto/howto_js_nav-list_responsive.asp
   ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-
-
   /* Add a black background color to the top navigation */
  .topnav {
   background-color: steelblue;                                     /*CHANGED*/
   overflow: hidden;
  }
 
-h1{
-
-    color: pink;
-
- }
 
  /* Style the links inside the navigation bar */
  .nav-list a {
@@ -236,6 +236,7 @@ h1{
  .nav-list a.active {
    background-color: mediumblue;                                    /*CHANGED*/
    color: white;
+   text-align: left;
  }
 
  /* Hide the link that should open and close the nav-list on small screens */
@@ -249,7 +250,7 @@ h1{
   /*Only float left when the navbar goes to hamburger
   The H1 is inline otherwise, and takes up a whole row. Tis is beacuse there
   canb be a screen size where both the h1 and the links go past half way*/
-  h1{float:left;}                                          /*ADDED*/
+
 
   .nav-list a {display: none;}                                        /*CHANGED*/
 
@@ -257,12 +258,7 @@ h1{
    float: right;
    display: block;
  }
-}
 
-/* The "responsive" class is added to the nav-list with JavaScript when the user
-clicks on the icon. This class makes the nav-list look good on small screens
-(display the links vertically instead of horizontally) */
-@media screen and (max-width: 549px) {                             /*CHANGED*/
  .nav-list.responsive {position: relative;}
  .nav-list.responsive a.icon {
    position: absolute;
@@ -274,8 +270,5 @@ clicks on the icon. This class makes the nav-list look good on small screens
    display: block;
    text-align: left;
  }
-
-h1{float:left;}
-
 
 }
