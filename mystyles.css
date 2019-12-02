@@ -1,27 +1,10 @@
 
 html body {
   width: 100%;
-  background-image: url("images/yellow-bokeh-photo-large.jpg");
+  background-image: url("images/white-crumpled-paper-large.jpg");
   /*background-repeat: no-repeat;*/
   background-position: center;
 }
-
-
-/*COPPIED FROM https://css-tricks.com/snippets/css/transparent-background-images/
-This allows the background image to have opacity, to make it less ditracting
-body::after {
-  content: "";
-  background: url("images/yellow-bokeh-photo-large.jpg");
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-}
-*/
-
 
 
 
@@ -37,7 +20,10 @@ body::after {
   padding-bottom: 5rem; /*footer height*/
 }
 
-
+h3{
+  background-color: steelblue;
+  padding-left: 10px;
+}
 /* Flex styling Index ------------------------------------------------------ */
 .flex-container {
   margin: 10px;
@@ -118,12 +104,12 @@ body::after {
     –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––  */
 
 .grid-container > div {
-  border: 2px solid red;
-  border-radius: 20px;
   margin: 0.5rem;
-  /*background-color: white;
-  opacity: 0.9;*/
-  /*padding-left:10px;
+  background-color: white;
+  opacity: 0.85;
+  /*  border: 2px solid red;
+    border-radius: 20px;
+  padding-left:10px;
   padding-right:10px;*/
 
 }
@@ -132,7 +118,14 @@ body::after {
 .stats-section4, .stats-section5, .stats-section6{}*/
 
 
-
+.grid-container > div > p{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.grid-container > div > dl{
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
 
 .grid-container{
