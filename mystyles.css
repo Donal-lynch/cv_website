@@ -23,6 +23,10 @@ html body {
   padding-bottom: 5rem; /*footer height*/
 }
 
+h1 a{
+  text-decoration:none;
+  color: white;}
+
 h3{
   background-color: steelblue;
   padding: 10px;
@@ -30,6 +34,11 @@ h3{
   /*margin-top: 0px;
   margin-right: 0px;
   margin-left: 0px;*/
+}
+
+.flex_gr_sm a{
+  text-decoration:none;
+  color: white;
 }
 
 /* Flex styling Index ------------------------------------------------------ */
@@ -235,8 +244,14 @@ img{
 */
 
 
-/* Radio buttons
+/* Form
     –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––  */
+form{
+  padding:10px;
+}
+
+
+
 .submit_btn {
   background-color: #4CAF50; /* Green */
   border: none;
@@ -247,6 +262,7 @@ img{
   display: inline-block;
   font-size: 16px;
 }
+
 
 
 
