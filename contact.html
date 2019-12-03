@@ -61,10 +61,10 @@
 				<h1><a href="index.html">Donal Lynch</a></h1>
 
 				<div class = 'nav-list' id="myTopnav">
-				  <a href="#home" class="active">Home</a>
+				  <a href="index.html">Home</a>
 				  <a href="statistics.html">Staistics</a>
 				  <a href="engineering.html">Engineering</a>
-				  <a href="contact.html">Contact</a>
+				  <a href="#contact" class="active">Contact</a>
 				  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
 				    <i class="fa fa-bars"></i>
 				  </a>
@@ -77,14 +77,59 @@
 				<div class="flex-container">
 					<div class = "flex_gr_bg">
 						<h2>Get in touch</h2>
+						<p>I'd love some feedback on this website, so please let me know what you think. Don't hold back, this form is anonymous</p>
 
-					</div>
+						<form action="https://formspree.io/donal.lynch.cv@gmail.com" method="post">
+
+							<p>How did you find the layout and structure of the site?</p>
+							<input type="radio" name="layout" value="good"> Pretty good
+							<input type="radio" name="layout" value="mid"> Acceptable
+							<input type="radio" name="layout" value="bad"> Should be improved
+							<br><br>
+
+							<p>How did you find the level of detail of the site?</p>
+							<input type="radio" name="detail" value="wordy"> Too wordy
+							<input type="radio" name="detail" value="mid"> A good level
+							<input type="radio" name="detail" value="fluffy"> I'd prefer more detail
+							<br><br>
+
+							<p>How was the spelling and grammar?</p>
+							<input type="radio" name="grammer" value="good"> Pretty good
+							<input type="radio" name="grammer" value="mid"> Acceptable
+							<input type="radio" name="grammer" value="bad"> Should be improved
+							<br><br>
+
+							<p>How is the speed of the site</p>
+							<input type="radio" name="speed" value="good"> Pretty good
+							<input type="radio" name="speed" value="mid"> Acceptable
+							<input type="radio" name="speed" value="bad"> Should be improved
+							<br><br>
+
+							<p>Are there any specific issues you'd like to highlight</p>
+							<textarea name="bugs" rows="10" cols="30" placeholder="eg. theres a dead link on the engineering page"></textarea>
+							<br><br>
+
+							<p>Is there any general feedback you'd like to provide</p>
+							<textarea name="feedback" rows="10" cols="30" placeholder="eg. I really liked the way that..."></textarea>
+							<br><br>
+
+							<p>Are you using a:</p>
+							<input type="radio" name="device" value="Mobile" required> Mobile
+							<input type="radio" name="device" value="Tablet"> Tablet
+							<input type="radio" name="device" value="Laptop"> Laptop
+							<input type="radio" name="device" value="Desktop"> Desktop
+							<br><br>
+
+					    <input class="submit_btn" type="submit" value="Send">
+						</form>
+
+
+
+					</div> <!-- flex group big -->
 
 
 
 			   	<div class = "flex_gr_sm">
-
-
 
 						<a href="statistics.html">
 							<section class = "index_link stats-link">
