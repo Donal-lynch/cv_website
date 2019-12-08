@@ -9,3 +9,12 @@ function myFunction() {
     x.className = "nav-list";
   }
 }
+
+
+
+/*Executes when checkbox is clicked
+Adds email input to contact page*/
+function email_checker(inputText)
+{
+    document.getElementById("email_input").innerHTML="<input id='email_input' type='email' placeholder='enter email'>";
+}

@@ -3,8 +3,8 @@ html body {
   width: 100%;
   margin: 0px;
   padding: 0px;
-  background-image: url("images/white-crumpled-paper-large.jpg");
-  /*background-repeat: no-repeat;*/
+  background-image: url("images/white-crumpled-paper-large_resized.jpg");
+  background-repeat: repeat;
   background-position: center;
   font-family: 'Raleway', sans-serif;
 }
@@ -49,7 +49,7 @@ h2, h3{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-left: auto;
   margin-right: auto;
 }
@@ -97,7 +97,7 @@ h2, h3{
 }
 
 /* Flex styling Index Tablet and larger ------------------------------------ */
-@media (min-width: 550px) {
+@media (min-width: 1000px) {
   .flex-container {
     flex-direction: row;
   }
@@ -188,7 +188,7 @@ h2, h3{
 }
 
 /*Media for desktop*/
-@media (min-width: 750px) {
+@media (min-width: 1000px) {
 
   .grid-container{
     grid-template:
@@ -255,7 +255,11 @@ form{
   padding:10px;
 }
 
-.submit_btn {
+.email_asker {display: inline;}
+
+
+
+.submit_btn {  /* Coppied from https://www.w3schools.com/css/css3_buttons.asp*/
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
@@ -266,7 +270,7 @@ form{
   font-size: 16px;
 }
 
-/* The container */
+/* The container coppied from https://www.w3schools.com/howto/howto_css_custom_checkbox.asp*/
 .radio-container {
   display: block;
   position: relative;
@@ -280,14 +284,16 @@ form{
   user-select: none;
 }
 
-/* Hide the browser's default radio button */
+/* Hide the browser's default radio button
+coppied from https://www.w3schools.com/howto/howto_css_custom_checkbox.asp*/
 .radio-container input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
 
-/* Create a custom radio button */
+/* Create a custom radio button
+coppied from https://www.w3schools.com/howto/howto_css_custom_checkbox.asp*/
 .checkmark {
   position: absolute;
   top: 0;
@@ -298,29 +304,34 @@ form{
   border-radius: 50%;
 }
 
-/* On mouse-over, add a grey background color */
+/* On mouse-over, add a grey background color
+coppied from https://www.w3schools.com/howto/howto_css_custom_checkbox.asp*/
 .radio-container:hover input ~ .checkmark {
   background-color: #ccc;
 }
 
-/* When the radio button is checked, add a blue background */
+/* When the radio button is checked, add a blue background
+coppied from https://www.w3schools.com/howto/howto_css_custom_checkbox.asp*/
 .radio-container input:checked ~ .checkmark {
   background-color: #2196F3;
 }
 
-/* Create the indicator (the dot/circle - hidden when not checked) */
+/* Create the indicator (the dot/circle - hidden when not checked)
+coppied from https://www.w3schools.com/howto/howto_css_custom_checkbox.asp*/
 .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-/* Show the indicator (dot/circle) when checked */
+/* Show the indicator (dot/circle) when checked
+coppied from https://www.w3schools.com/howto/howto_css_custom_checkbox.asp*/
 .radio-container input:checked ~ .checkmark:after {
   display: block;
 }
 
-/* Style the indicator (dot/circle) */
+/* Style the indicator (dot/circle)
+coppied from https://www.w3schools.com/howto/howto_css_custom_checkbox.asp*/
 .radio-container .checkmark:after {
  	top: .4rem;
 	left: .4rem;
@@ -405,7 +416,7 @@ footer a{
 
  /* When the screen is less than 600 pixels wide, hide all links, except for the
  first one ("Home"). Show the link that contains should open and close the nav-list (.icon) */
-@media screen and (max-width: 549px) {                              /*CHANGED*/
+@media screen and (max-width: 1000px) {                              /*CHANGED*/
   /*Only float left when the navbar goes to hamburger
   The H1 is inline otherwise, and takes up a whole row. Tis is beacuse there
   canb be a screen size where both the h1 and the links go past half way*/
