@@ -11,7 +11,6 @@ function myFunction() {
 }
 
 
-
 /*Executes when checkbox is clicked
 Adds email input to contact page*/
 function email_checker(inputText)

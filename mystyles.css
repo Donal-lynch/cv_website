@@ -31,19 +31,17 @@ h2, h3{
   background-color: steelblue;
   padding: 10px;
   margin: 0px 0px 0.5rem 0px;
-  /*margin-top: 0px;
-  margin-right: 0px;
-  margin-left: 0px;*/
 }
 
 
+
+/* Flex styling ------------------------------------------------------ */
 
 .flex_gr_sm a{
   text-decoration:none;
   color: white;
 }
 
-/* Flex styling Index ------------------------------------------------------ */
 .flex-container {
   margin: 10px;
   display: flex;
@@ -55,8 +53,6 @@ h2, h3{
 }
 
 .flex_gr_bg{
-  /*padding: 10px;
-  margin: .25%;*/
   background-color: white;
   opacity: 0.9;
 }
@@ -69,7 +65,7 @@ h2, h3{
   flex-direction: column;
 }
 
-.about_me{
+.flex_gr_bg p{
   padding-top: 5px;
   padding-left: 5px;
   padding-right: 5px;
@@ -97,7 +93,7 @@ h2, h3{
 }
 
 /* Flex styling Index Tablet and larger ------------------------------------ */
-@media (min-width: 1000px) {
+@media (min-width: 550px) {
   .flex-container {
     flex-direction: row;
   }
@@ -128,17 +124,8 @@ h2, h3{
 .grid-container > div {
   margin: 0.5rem;
   background-color: white;
-  opacity: 0.85;
-  /*  border: 2px solid red;
-    border-radius: 20px;
-  padding-left:10px;
-  padding-right:10px;*/
-
+  opacity: 0.9;
 }
-
-/*.stats-section1, .stats-section2, .stats-section3,
-.stats-section4, .stats-section5, .stats-section6{}*/
-
 
 .grid-container > div > p{
   margin-left: 10px;
@@ -203,17 +190,11 @@ h2, h3{
 
 
 
-/* iframes in statistics page
-    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––  */
+/* iframes in statistics page ––––––––––––––––––––––––––––––––––––––––––––  */
 .stats-section6{
   padding-left: 0px;
 }
-/*
-.map {
-  width: 20%;
-  /*height: 100%;
-}
-*/
+
 .video-iframe, .map-iframe{
   display: inline-block;
   width:90%;
@@ -240,24 +221,12 @@ img{
 
 
 
-/*
-@media (min-width: 550px) {
-  .video-wrapper{
-    height: 80%;
-  }
-}
-*/
-
-
-/* Form
-    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––  */
+/* Form –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––  */
 form{
   padding:10px;
 }
 
 .email_asker {display: inline;}
-
-
 
 .submit_btn {  /* Coppied from https://www.w3schools.com/css/css3_buttons.asp*/
   background-color: #4CAF50; /* Green */
@@ -270,7 +239,8 @@ form{
   font-size: 16px;
 }
 
-/* The container coppied from https://www.w3schools.com/howto/howto_css_custom_checkbox.asp*/
+/* The container
+coppied from https://www.w3schools.com/howto/howto_css_custom_checkbox.asp*/
 .radio-container {
   display: block;
   position: relative;
@@ -342,15 +312,9 @@ coppied from https://www.w3schools.com/howto/howto_css_custom_checkbox.asp*/
 }
 
 
-
-
-
-
-/* footer
-    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––  */
+/* footer –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––  */
 
 footer{
-
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -414,13 +378,12 @@ footer a{
    display: none;
  }
 
- /* When the screen is less than 600 pixels wide, hide all links, except for the
+ /* When the screen is less than 1000 pixels wide, hide all links, except for the
  first one ("Home"). Show the link that contains should open and close the nav-list (.icon) */
 @media screen and (max-width: 1000px) {                              /*CHANGED*/
   /*Only float left when the navbar goes to hamburger
   The H1 is inline otherwise, and takes up a whole row. Tis is beacuse there
   canb be a screen size where both the h1 and the links go past half way*/
-
 
   .nav-list a {display: none;}                                        /*CHANGED*/
 
